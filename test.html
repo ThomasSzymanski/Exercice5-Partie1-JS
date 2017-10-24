@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Exercice 1</title>
+</head>
+<body>
+
+    <script>
+	    	var startMessage = 'Votre catégorie : ',
+		    endMessage,
+		    adult = confirm('Êtes-vous majeur ?');
+
+		if (adult) { // La variable « adult » contient un booléen, on peut donc directement la soumettre à la structure if sans opérateur conditionnel
+		    endMessage = '18+';
+		   
+		} else {
+		    endMessage = '-18';
+		    
+		}
+
+		alert(startMessage + endMessage);
+	</script>
+</body>
+</html>
