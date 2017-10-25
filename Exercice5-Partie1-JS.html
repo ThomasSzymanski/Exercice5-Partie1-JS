@@ -11,12 +11,14 @@
             <button  id="valider" name ="valider" onclick="display()">Valider</button>
         </form>
         <script>
-             function display() {
+             function display(){
               var first = document.getElementById('premier_nombre').value;
               var second = document.getElementById('deuxieme_nombre').value;
-              var premier = Math.trunc(first);
-              alert(premier * second);  
-            };
+              if(isNaN(first) == false && isNaN(second) == false){
+                var premier = Math.trunc(first);
+                alert(premier * second); 
+              } 
+            }
         </script>
     </body>
 </html>
